@@ -1,0 +1,11 @@
+Questão 2
+
+Para essa questão foi feito um programa simples que printa
+no terminal a sequencia de fibonacci. O codigo foi feito em 
+linguagem C, o arquivo principal contem as chamadas para as 
+funções contidas nos outros arquivos. No arquivo fibonacci.h
+contém a função que gera a sequencia e no arquivo fibprint.h
+a função que printa a sequencia.
+Os arquivos das funçoes foram linkados com #include no programa
+principal, e os arquivos dos mesmos mantidos no mesmo diretorio 
+que o programa principal.
