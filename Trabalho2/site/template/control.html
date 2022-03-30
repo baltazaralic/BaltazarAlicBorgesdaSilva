@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<title>controle</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+
+<body bgcolor="#000000" class="body">
+	<h1>
+		<img src="{{ url_for('static', filename='lightboost.png') }}" width="358" height="95" alt=""/>
+	</h1>
+	<h2 align="center">
+		<img src="{{ url_for('static', filename='texto1.png') }}" width="543" height="48" alt=""/>
+	</h2>
+	<table border="0" align="center">
+	  <tbody>
+		<tr>
+		  <th scope="col" height="100">&nbsp;</th>
+		</tr>
+		<tr>
+		  <th scope="row">
+			  <form method="post" action="/comodos/sala">
+			  <input type="submit" class="botao" id="sala_submit">
+			  <center class="img"><label for="sala_submit" class="label">
+				  {% if sala == "True" %}
+				   <img src="{{ url_for('static', filename='sala_lig.png') }}" width="350" height="330" alt=""/>
+				  {% else %}
+				   <img src="{{ url_for('static', filename='sala.png') }}" width="350" height="330" alt=""/>
+				  {% endif %}
+			  </label></center>
+			  </form>
+		  </th>
+		  <td align="center">
+			  <form method="post" action="/comodos/cozinha">
+			  <input type="submit" class="botao" id="cozinha_submit">
+			  <center class="img"><label for="cozinha_submit" class="label">
+				  {% if cozinha == "True" %}
+				   <img src="{{ url_for('static', filename='cozinha_lig.png') }}" width="350" height="330" alt=""/>
+				  {% else %}
+				   <img src="{{ url_for('static', filename='cozinha.png') }}" width="350" height="330" alt=""/>
+				  {% endif %}
+			  </label></center>
+			  </form>
+		  </td>
+		</tr>
+		<tr>
+		  <th scope="col" height="100">&nbsp;</th>
+		</tr>
+		<tr>
+		  <th scope="row">
+			  <form method="post" action="/comodos/quarto">
+			  <input type="submit" class="botao" id="quarto_submit">
+			  <center class="img"><label for="quarto_submit" class="label">
+				  {% if quarto == "True" %}
+				   <img src="{{ url_for('static', filename='quarto_lig.png') }}" width="350" height="330" alt=""/>
+				  {% else %}
+				   <img src="{{ url_for('static', filename='quarto.png') }}" width="350" height="330" alt=""/>
+				  {% endif %}
+			  </label></center>
+			  </form>
+		  </th>
+		  <td align="center">
+			  <form method="post" action="/comodos/banheiro">
+			  <input type="submit" class="botao" id="banheiro_submit">
+			  <center class="img"><label for="banheiro_submit" class="label">
+				  {% if banheiro == "True" %}
+				   <img src="{{ url_for('static', filename='banheiro_lig.png') }}" width="350" height="330" alt=""/>
+				  {% else %}
+				   <img src="{{ url_for('static', filename='banheiro.png') }}" width="350" height="330" alt=""/>
+				  {% endif %}
+			  </label></center>
+			  </form>
+		  </td>
+		</tr>
+	  </tbody>
+	</table>
+</body>
+</html>

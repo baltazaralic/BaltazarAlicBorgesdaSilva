@@ -1,0 +1,17 @@
+.checkbox {
+    opacity:0;
+}
+
+.botao {
+    display: none;
+}
+
+.body {
+    background-image: url('background.png');
+    background-size: cover;
+}
+
+.checkbox:checked + .img {
+    background-color: #17150B;
+    border-radius: 10px;
+}
